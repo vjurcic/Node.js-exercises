@@ -11,8 +11,8 @@ var formidable = require('formidable');
 /**
  * start() writes the upload page
  * 
- * @param {type} response
- * @param {type} request
+ * @param {object} response
+ * @param {object} request
  * @returns {undefined}
  */
 function start(response, request) {
@@ -68,7 +68,7 @@ function upload(response, request) {
 /**
  * show() writes the uploaded image
  * 
- * @param {type} response
+ * @param {object} response
  * @returns {undefined}
  */
 function show(response) {

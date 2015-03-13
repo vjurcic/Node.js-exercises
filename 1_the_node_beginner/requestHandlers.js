@@ -4,15 +4,14 @@
  * @module requestHandlers
  */
 
-var querystring = require('querystring');
 var fs = require('fs');
 var formidable = require('formidable');
 
 /**
  * start() writes the upload page
  * 
- * @param {object} response
- * @param {object} request
+ * @param {Object} response
+ * @param {Object} request
  * @returns {undefined}
  */
 function start(response, request) {
@@ -40,8 +39,10 @@ function start(response, request) {
 /**
  * upload() stores and displays the sent image file
  * 
- * @param {object} response
- * @param {object} request
+ * @requires module:formidable
+ * @requires module:fs
+ * @param {Object} response
+ * @param {Object} request
  * @returns {undefined}
  */
 function upload(response, request) {
@@ -68,7 +69,8 @@ function upload(response, request) {
 /**
  * show() writes the uploaded image
  * 
- * @param {object} response
+ * @requires module:fs
+ * @param {Object} response
  * @returns {undefined}
  */
 function show(response) {

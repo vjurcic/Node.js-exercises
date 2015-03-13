@@ -11,10 +11,10 @@ var url = require('url');
  * start() starts the server on
  * localhost:8888
  * 
- * @requires http, url modules
- * @param {function} route
- * @param {object} handle
- * @returns {undefined}
+ * @requires module:http
+ * @requires module:url
+ * @param {route} route - The callback that handles the routing
+ * @param {Object} handle
  */
 function start(route, handle) {
     http.createServer(function(request, response) {

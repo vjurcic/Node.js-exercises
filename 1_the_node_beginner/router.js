@@ -8,8 +8,9 @@
  * route() calls the apropriate handler
  * for given pathname
  * 
+ * @callback route
  * @param {object} handle
- * @param {String} pathname
+ * @param {string} pathname
  * @param {object} response
  * @param {object} request
  * @returns {unresolved}

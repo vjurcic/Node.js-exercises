@@ -8,8 +8,8 @@ if (!filename) {
 }
 
 fs.watch(filename, function() {
-  let ls = spawn('ls', ['-lh', filename]);
-  ls.stdout.pipe(process.stdout);
+  let fn = spawn(process.argv[3], [process.argv[4], filename]);
+  fn.stdout.pipe(process.stdout);
 });
 
 console.log('Now watching ' + filename + ' for changes...');
